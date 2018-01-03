@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[JavaCross01]]></title>
+    <url>%2F2018%2F01%2F03%2Fhead_first_javacross_01%2F</url>
+    <content type="text"><![CDATA[本文内容对应《Head First Java》一书中第一章的字谜游戏，相关单词内容可参考网址：studystack ####横排提示 Command-line invoker Back again? Can’t go both ways Acronym for your laptop’s power number variable type Acronym for a chip Say something Quite a crew of characters Announce a new class or method What’s a prompt good for? ####竖排提示 Not an integer (or _ your boat) Come back empty-handed Open house ‘Things’ holders Until attitudes improve Source code consumer Can’t pin it down Dept. of LAN jockeys Shocking modifier Just gotta have one How to get things done Bytecode consumer ##答案见下 index hint word index hint word 1 Not an integer (or _ your boat) float 12 number variable type int 2 Come back empty-handed void 13 Acronym for a chip IC 3 Open house public 14 Say something SystemOutPrint 4 Command-line invoker java 15 Shocking modifier Static 5 ‘Things’ holders arrays 16 Just gotta have one main 6 Back again? loop 17 How to get things done method 7 Until attitudes improve while 18 Quite a crew of characters string 8 Can’t go both ways branch 19 Announce a new class or method declare 9 Acronym for your laptop’s power DC 20 Bytecode consumer JVM 10 Source code consumer compiler 21 What’s a prompt good for? command 11 Can’t pin it down variable 书中答案截图如下所示： ###Tipsindex:16 Just gotta have one 无论程序有多大（也可以说不管有多少类），一定都会有一个main()来作为程序的起点。 Head First Java]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>head_first</tag>
+        <tag>java_cross</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Intro]]></title>
     <url>%2F2017%2F12%2F20%2Fintro%2F</url>
     <content type="text"><![CDATA[例行公事，秀个恩爱先]]></content>
