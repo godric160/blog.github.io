@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[自然常数的相关了解]]></title>
+    <url>%2F2018%2F01%2F07%2FEulers-Number%2F</url>
+    <content type="text"><![CDATA[在学习线性回归的时候发现自己并不能理解正态分布的方程式，尤其对自然常数exp感到陌生，遂查阅相关资料，了解了一下关于这个自然常数的前生今世。自然常数exp是一个数学常量，是个无限不循环小数，约为2.71828，它的定义为：$$ \exp=\sum{n=0}^{+ \infty} \frac{1}{n!}=\frac{1}{1!}+\frac{1}{2!}+\frac{1}{3!}+\frac{1}{4!}\cdots $$或者是：$$ \exp=\lim{n \rightarrow +\infty}(1+\frac{1}{n})^n $$ 它有时候被称为欧拉数(Euler’s number),因为十八世纪初,数学大师Leonard Euler发现了这个自然常数。当时，Euler试图解决Jacob Bernoulli于半世纪前提出的银行利率问题： 假定你在银行存了一笔钱，银行每年给100%的利率，一年后，你会得到:$$ (1+100\%)^1 = 2 $$ 现在假设银行每六个月结算一次利息，但只能提供利率的一半，即50%。在这种情况下，一年后的收益为:$$ (1+50\%)^2=2.25 $$ 而假设银行每四个月提供33.3%复利息:$$ (1+33.3\%)^{3} \approx 2.37 $$ 甚至银行愿意每天都提供利息的话，一年的利息:$$ (1+\frac{1}{365})^{365} \approx 2.71456748202 $$ 如果银行丧心病狂到愿意按秒给利息了，1年31536000秒，利滚利的余额:$$ (1+\frac{1}{31536000})^{31536000} \approx 2.7182817813 $$ 到头来才发现，也没多挣几个钱，而这个数值却越来越接近exp，所以exp就像另外一个数学常量π一样，假定直径长为1，通过割圆术分割出多边形的边数越多，算出来的周长也越接近于π。 微积分中的exp微积分中的exp更为神奇，对下式 $$ f(x) $$ 进行微分，无论进行几次结果还仍然为 $$ f(x) $$ ，难怪数学系学生会用exp比喻坚定不移的爱情！$$ f(x)=\exp^{x} $$就是说 $$ f(x) $$ 这条曲线上任意点的斜率等于当前 $$ f(x) $$ 的值，如下图所示： 就是说 $$ f(x) $$ 是一个无法降维的指数函数，因为它的导数等于其自身。 相关参考Wikipedia:e (mathematical constant))数学里的e为什么叫做自然底数？是不是自然界里什么东西恰好是e？An Intuitive Guide To Exponential Functions &amp; e《天才引导的历程》]]></content>
+      <categories>
+        <category>math</category>
+      </categories>
+      <tags>
+        <tag>mathematical constant</tag>
+        <tag>Euler&#39;s Number</tag>
+        <tag>exp</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[LaTex 数学公式]]></title>
     <url>%2F2018%2F01%2F06%2FLaTex-Mathematics%2F</url>
     <content type="text"><![CDATA[最近开始用hexo写博客，markdown语言采用MathJax引擎来显示数学公式，采用的是LaTex的语法，不仅方便使用，且渲染出来的公式比Word上好看多了。本文是鄙人在学习使用中边学边整理而成，并会不断更新，主要内容参考于文章下方的参考网页。 通用语法实际写作中，公式内容用一对$$包括起来，建议公式前后留空格，形如：1$$ Mathematics $$ 具体各种用法均总结于下列表格中： 各种结构体 constructions LaTex Code constructions LaTex Code \widetilde{abc} $$ \widetilde{abc} $$ \widehat{abc} $$ \widehat{abc} $$ \overleftarrow{abc} $$ \overleftarrow{abc} $$ \overrightarrow{abc} $$ \overrightarrow{abc} $$ \overline{abc} $$ \overline{abc} $$ \underline{abc} $$ \underline{abc} $$ \overbrace{abc} $$ \overbrace{abc} $$ \underbrace{abc} $$ \underbrace{abc} $$ \sqrt{abc} $$ \sqrt{abc} $$ \sqrt[n]{abc} $$ \sqrt[n]{abc} $$ f’ $$ f’ $$ \frac{abc}{xyz} $$ \frac{abc}{xyz} $$ 希腊符号(小) Greek letter LaTex Code Greek letter LaTex Code \alpha $$ \alpha $$ o $$ o $$ \beta $$ \beta $$ \pi $$ \pi $$ \gamma $$ \gamma $$ \varpi $$ \varpi $$ \delta $$ \delta $$ \rho $$ \rho $$ \epsilon $$ \epsilon $$ \varrho $$ \varrho $$ \varepsilon $$ \varepsilon $$ \sigma $$ \sigma $$ \zeta $$ \zeta $$ \varsigma $$ \varsigma $$ \eta $$ \eta $$ \tau $$ \tau $$ \theta $$ \theta $$ \upsilon $$ \upsilon $$ \vartheta $$ \vartheta $$ \phi $$ \phi $$ \kappa $$ \kappa $$ \varphi $$ \varphi $$ \lambda $$ \lambda $$ \chi $$ \chi $$ \mu $$ \mu $$ \psi $$ \psi $$ \nu $$ \nu $$ \omega $$ \omega $$ \xi $$ \xi $$ 希腊符号(大) Greek letter LaTex Code Greek letter LaTex Code \Gamma $$ \Gamma $$ \Sigma $$ \Sigma $$ \Delta $$ \Delta $$ \Upsilon $$ \Upsilon $$ \Theta $$ \Theta $$ \Phi $$ \Phi $$ \Lambda $$ \Lambda $$ \Psi $$ \Psi $$ \Xi $$ \Xi $$ \Omega $$ \Omega $$ \Pi $$ \Pi $$ 常用二元运算符 Symbols LaTex Code Symbols LaTex Code \pm $$ \pm $$ \mp $$ \mp $$ \times $$ \times $$ \div $$ \div $$ \ast $$ \ast $$ \cdot $$ \cdot $$ \circ $$ \circ $$ \bullet $$ \bullet $$ + $$ + $$ - $$ - $$ \cap $$ \cap $$ \cup $$ \cup $$ \vee $$ \vee $$ \wedge $$ \wedge $$ 常用关系运算符 Symbols LaTex Code Symbols LaTex Code &lt; $$ &lt; $$ &gt; $$ &gt; $$ \ll $$ \ll $$ \gg $$ \gg $$ \leq $$ \leq $$ \geq $$ \geq $$ = $$ = $$ \neq $$ \neq $$ \approx $$ \approx $$ \doteq $$ \doteq $$ \subset $$ \subset $$ \supset $$ \supset $$ \subseteq $$ \subseteq $$ \supseteq $$ \supseteq $$ \in $$ \in $$ \in $$ \in $$ \mid $$ \mid $$ \parallel $$ \parallel $$ 大小可变符号 Symbols LaTex Code Symbols LaTex Code \sum $$ \sum $$ $$ $$ \prod $$ \prod $$ \coprod $$ \coprod $$ \bigcap $$ \bigcap $$ \bigcup $$ \bigcup $$ \bigvee $$ \bigvee $$ \bigwedge $$ \bigwedge $$ \int $$ \int $$ \oint $$ \oint $$ \iint $$ \iint $$ \iiint $$ \iiint $$ Log-like 符号 Symbols LaTex Code Symbols LaTex Code \arccos $$ \arccos $$ \cos $$ \cos $$ \arcsin $$ \arcsin $$ \sin $$ \sin $$ \arctan $$ \arctan $$ \tan $$ \tan $$ \log $$ \log $$ \ln $$ \ln $$ \exp $$ \exp $$ \max $$ \max $$ \lim $$ \lim $$ 数学模式的口音 Symbols LaTex Code Symbols LaTex Code \hat{a} $$ \hat{a} $$ \check{a} $$ \check{a} $$ \acute{a} $$ \acute{a} $$ \grave{a} $$ \grave{a} $$ \bar{a} $$ \bar{a} $$ \vec{a} $$ \vec{a} $$ \dot{a} $$ \dot{a} $$ \ddot{a} $$ \ddot{a} $$ \breve{a} $$ \breve{a} $$ \tilde{a} $$ \tilde{a} $$ 各种符号 Symbols LaTex Code Symbols LaTex Code \ldotp $$ \ldotp $$ \cdotp $$ \cdotp $$ \ldots $$ \ldots $$ \cdots $$ \cdots $$ \colon $$ \colon $$ \neg $$ \neg $$ \forall $$ \forall $$ \exists $$ \exists $$ \partial $$ \partial $$ \infty $$ \infty $$ \sharp $$ \sharp $$ 箭头符号 Symbols LaTex Code Symbols LaTex Code \leftarrow $$ \leftarrow $$ \rightarrow $$ \rightarrow $$ \longleftarrow $$ \longleftarrow $$ \longrightarrow $$ \longrightarrow $$ \Leftarrow $$ \Leftarrow $$ \Rightarrow $$ \Rightarrow $$ \Longleftarrow $$ \Longleftarrow $$ \Longrightarrow $$ \Longrightarrow $$ \leftrightarrow $$ \leftrightarrow $$ \longleftrightarrow $$ \longleftrightarrow $$ \Leftrightarrow $$ \Leftrightarrow $$ \Longleftrightarrow $$ \Longleftrightarrow $$ \uparrow $$ \uparrow $$ \downarrow $$ \downarrow $$ \Uparrow $$ \Uparrow $$ \Downarrow $$ \Downarrow $$ 参考网页：维基教科书:LaTeX/数学公式LaTeX Math Symbols怎样输入完美的TeX公式]]></content>
@@ -11,19 +24,6 @@
         <tag>LaTex</tag>
         <tag>markdown</tag>
         <tag>mathematics</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[自然常数的相关了解]]></title>
-    <url>%2F2018%2F01%2F06%2FEulers-Number%2F</url>
-    <content type="text"><![CDATA[在学习线性回归的时候发现自己并不能理解正态分布的方程式，尤其对自然常数exp感到陌生，遂查阅相关资料，了解了一下关于这个自然常数的前生今世。自然常数exp是一个数学常量，是个无限不循环小数，约为2.71828，它的定义为：$$ \exp=\sum{n=0}^{+ \infty} \frac{1}{n!}=\frac{1}{1!}+\frac{1}{2!}+\frac{1}{3!}+\frac{1}{4!}\cdots $$或者是：$$ \exp=\lim{n \rightarrow +\infty}(1+\frac{1}{n})^n $$ 它有时候被称为欧拉数(Euler’s number),因为十八世纪初,数学大师Leonard Euler发现了这个自然常数。当时，Euler试图解决Jacob Bernoulli于半世纪前提出的银行利率问题： 假定你在银行存了一笔钱，银行每年给100%的利率，一年后，你会得到:$$ (1+100\%)^1 = 2 $$ 现在假设银行每六个月结算一次利息，但只能提供利率的一半，即50%。在这种情况下，一年后的收益为:$$ (1+50\%)^2=2.25 $$ 而假设银行每四个月提供33.3%复利息:$$ (1+33.3\%)^{3} \approx 2.37 $$ 甚至银行愿意每天都提供利息的话，一年的利息:$$ (1+\frac{1}{365})^{365} \approx 2.71456748202 $$ 如果银行丧心病狂到愿意按秒给利息了，1年31536000秒，利滚利的余额:$$ (1+\frac{1}{31536000})^{31536000} \approx 2.7182817813 $$ 到头来才发现，也没多挣几个钱，而这个数值却越来越接近exp，所以exp就像另外一个数学常量π一样，假定直径长为1，通过割圆术分割出多边形的边数越多，算出来的周长也越接近于π。 微积分中的exp微积分中的exp更为神奇，对下式 $$ f(x) $$ 进行微分，无论进行几次结果还仍然为 $$ f(x) $$ ，难怪数学系学生会用exp比喻坚定不移的爱情！$$ f(x)=\exp^{x} $$就是说 $$ f(x) $$ 这条曲线上任意点的斜率等于当前 $$ f(x) $$ 的值，如下图所示： 就是说 $$ f(x) $$ 是一个无法降维的指数函数，因为它的导数等于其自身。 相关参考Wikipedia:e (mathematical constant))数学里的e为什么叫做自然底数？是不是自然界里什么东西恰好是e？An Intuitive Guide To Exponential Functions &amp; e《天才引导的历程》]]></content>
-      <categories>
-        <category>math</category>
-      </categories>
-      <tags>
-        <tag>mathematical constant</tag>
-        <tag>Euler&#39;s Number</tag>
-        <tag>exp</tag>
       </tags>
   </entry>
   <entry>
