@@ -653,7 +653,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  577
+                  921
                 </span>
               
 
@@ -669,7 +669,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  3
+                  5
                 </span>
               
             </div>
@@ -693,7 +693,12 @@
         
           
             <p>最近开始用hexo写博客，markdown语言采用MathJax引擎来显示数学公式，采用的是LaTex的语法，不仅方便使用，且渲染出来的公式比Word上好看多了。本文是鄙人在学习使用中边学边整理而成，并会不断更新，主要内容参考于文章下方的参考网页。</p>
-<h3 id="通用语法"><a href="#通用语法" class="headerlink" title="通用语法"></a>通用语法</h3><p>实际写作中，公式内容用一对$$包括起来，建议公式前后留空格，形如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$ Mathematics $$</span><br></pre></td></tr></table></figure></p>
+<h3 id="通用语法"><a href="#通用语法" class="headerlink" title="通用语法"></a>通用语法</h3><p>LaTeX公式有两种调用形式，一种是行内显示公式用<code>$...$</code>显示，还有一种是单独一行显示，用<code>$$...$$</code> ，个人习惯公式前后留空格，形如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">公式1：$ Mathematics1 $</span><br><span class="line"></span><br><span class="line">公式2：$$ Mathematics2 $$</span><br></pre></td></tr></table></figure></p>
+<p>显示效果：</p>
+<blockquote>
+<p>公式1：$ Mathematics1 $</p>
+<p>公式2：$$ Mathematics2 $$</p>
+</blockquote>
 <p>具体各种用法均总结于下列表格中：</p>
 <h3 id="各种结构体"><a href="#各种结构体" class="headerlink" title="各种结构体"></a>各种结构体</h3><table>
 <thead>
@@ -1339,7 +1344,14 @@
 </tr>
 </tbody>
 </table>
-<p>参考网页：<br><a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics" target="_blank" rel="noopener">维基教科书:LaTeX/数学公式</a><br><a href="http://web.ift.uib.no/Teori/KURS/WRK/TeX/symALL.html" target="_blank" rel="noopener">LaTeX Math Symbols</a><br><a href="http://www.ctex.org/documents/shredder/tex_frame.html" target="_blank" rel="noopener">怎样输入完美的TeX公式</a></p>
+<h3 id="多行公式显示方法："><a href="#多行公式显示方法：" class="headerlink" title="多行公式显示方法："></a>多行公式显示方法：</h3><h5 id="多个方程式"><a href="#多个方程式" class="headerlink" title="多个方程式"></a>多个方程式</h5><!-- 方程式间使用``\\``来进行换行，如果要给方程式后面加上标签，使用``\qquad ()``标记,效果如下所示： -->
+<p>方程式间使用<code>\\</code>来进行换行，实际使用中，需要进行转义，即使用<code>\\\</code>来进行换行，效果如下所示：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">f(x)=exp^&#123;x&#125;\\\</span><br><span class="line">f(y)=exp^&#123;y&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure></p>
+<p>显示效果：<br>$$<br>f(x)=exp^{x}\\<br>f(y)=exp^{y}<br>$$</p>
+<h5 id="数学运算拆解的式子"><a href="#数学运算拆解的式子" class="headerlink" title="数学运算拆解的式子"></a>数学运算拆解的式子</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">\begin&#123;align&#125;</span><br><span class="line">\sqrt&#123;37&#125; &amp; = \sqrt&#123;\frac&#123;73^2-1&#125;&#123;12^2&#125;&#125; \\\</span><br><span class="line"> &amp; = \sqrt&#123;\frac&#123;73^2&#125;&#123;12^2&#125;\cdot\frac&#123;73^2-1&#125;&#123;73^2&#125;&#125; \\\</span><br><span class="line"> &amp; = \sqrt&#123;\frac&#123;73^2&#125;&#123;12^2&#125;&#125;\sqrt&#123;\frac&#123;73^2-1&#125;&#123;73^2&#125;&#125; \\\</span><br><span class="line"> &amp; = \frac&#123;73&#125;&#123;12&#125;\sqrt&#123;1 - \frac&#123;1&#125;&#123;73^2&#125;&#125; \\\</span><br><span class="line"> &amp; \approx \frac&#123;73&#125;&#123;12&#125;\left(1 - \frac&#123;1&#125;&#123;2\cdot73^2&#125;\right)</span><br><span class="line">\end&#123;align&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+<p>显示结果<br>$$<br>\begin{align}<br>\sqrt{37} &amp; = \sqrt{\frac{73^2-1}{12^2}} \\<br> &amp; = \sqrt{\frac{73^2}{12^2}\cdot\frac{73^2-1}{73^2}} \\<br> &amp; = \sqrt{\frac{73^2}{12^2}}\sqrt{\frac{73^2-1}{73^2}} \\<br> &amp; = \frac{73}{12}\sqrt{1 - \frac{1}{73^2}} \\<br> &amp; \approx \frac{73}{12}\left(1 - \frac{1}{2\cdot73^2}\right)<br>\end{align}<br>$$</p>
+<h5 id="矩阵与对齐"><a href="#矩阵与对齐" class="headerlink" title="矩阵与对齐"></a>矩阵与对齐</h5><p>使用了array指令，同样使用<code>\\\</code>进行换行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">\mathbf&#123;X&#125; =</span><br><span class="line">	\left(</span><br><span class="line">  \begin&#123;array&#125;</span><br><span class="line">  &#123;ccc&#125;</span><br><span class="line">	x\_&#123;11&#125; &amp; x\_&#123;12&#125; &amp; \ldots \\\</span><br><span class="line">	x\_&#123;21&#125; &amp; x\_&#123;22&#125; &amp; \ldots \\\</span><br><span class="line">	\vdots &amp; \vdots &amp; \ddots</span><br><span class="line">	\end&#123;array&#125;</span><br><span class="line">  \right)</span><br><span class="line">$$</span><br></pre></td></tr></table></figure></p>
+<p>显示结果<br>$$<br>\mathbf{X} =<br>    \left(<br>  \begin{array}<br>  {ccc}<br>    x_{11} &amp; x_{12} &amp; \ldots \\<br>    x_{21} &amp; x_{22} &amp; \ldots \\<br>    \vdots &amp; \vdots &amp; \ddots<br>    \end{array}<br>  \right)<br>$$</p>
+<p>参考网页：<br><a href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="noopener">MathJax basic tutorial and quick reference</a><br><a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics" target="_blank" rel="noopener">维基教科书:LaTeX/数学公式</a><br><a href="http://web.ift.uib.no/Teori/KURS/WRK/TeX/symALL.html" target="_blank" rel="noopener">LaTeX Math Symbols</a><br><a href="http://www.ctex.org/documents/shredder/tex_frame.html" target="_blank" rel="noopener">怎样输入完美的TeX公式</a></p>
 
           
         

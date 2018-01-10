@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>http://godric160.me/2018/01/06/LaTex-Mathematics/</loc>
+    <lastmod>2018-01-10T11:21:17.670Z</lastmod>
+    <data>
+        <display>
+        <title>LaTex 数学公式</title>
+        <pubTime>2018-01-06T04:55:52.000Z</pubTime>
+        
+        <tag>LaTex</tag>
+         
+        <tag>markdown</tag>
+         
+        <tag>mathematics</tag>
+         
+         
+           
+             
+              <breadCrumb title="tools" url="http://godric160.me/categories/tools/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://godric160.me/2018/01/07/Eulers-Number/</loc>
     <lastmod>2018-01-07T03:38:59.952Z</lastmod>
     <data>
@@ -21,30 +45,6 @@
            
              
               <breadCrumb title="math" url="http://godric160.me/categories/math/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://godric160.me/2018/01/06/LaTex-Mathematics/</loc>
-    <lastmod>2018-01-06T12:13:31.846Z</lastmod>
-    <data>
-        <display>
-        <title>LaTex 数学公式</title>
-        <pubTime>2018-01-06T04:55:52.000Z</pubTime>
-        
-        <tag>LaTex</tag>
-         
-        <tag>markdown</tag>
-         
-        <tag>mathematics</tag>
-         
-         
-           
-             
-              <breadCrumb title="tools" url="http://godric160.me/categories/tools/"/>
           
         </display>
     </data>
