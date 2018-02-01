@@ -1,4 +1,5 @@
-http://godric160.me/2018/01/07/Eulers-Number/
-http://godric160.me/2018/01/06/LaTex-Mathematics/
-http://godric160.me/2018/01/03/Javacross-01/
-http://godric160.me/2017/12/20/Intro/
+https://godric160.com/2018/01/31/Machine_Learning_episode_01/
+https://godric160.com/2018/01/07/Eulers-Number/
+https://godric160.com/2018/01/06/LaTex-Mathematics/
+https://godric160.com/2018/01/03/Javacross-01/
+https://godric160.com/2017/12/20/Intro/

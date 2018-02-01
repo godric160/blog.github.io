@@ -4,8 +4,30 @@
 
     
   <url>
-    <loc>http://godric160.me/2018/01/06/LaTex-Mathematics/</loc>
-    <lastmod>2018-01-10T11:21:17.670Z</lastmod>
+    <loc>https://godric160.com/2018/01/31/Machine_Learning_episode_01/</loc>
+    <lastmod>2018-02-01T08:21:48.023Z</lastmod>
+    <data>
+        <display>
+        <title>Machine Learining--Introduction</title>
+        <pubTime>2018-01-31T09:35:04.000Z</pubTime>
+        
+        <tag>Personal notes</tag>
+         
+        <tag>machine learning</tag>
+         
+         
+           
+             
+              <breadCrumb title="machine learning" url="https://godric160.com/categories/machine-learning/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://godric160.com/2018/01/06/LaTex-Mathematics/</loc>
+    <lastmod>2018-01-11T10:14:44.665Z</lastmod>
     <data>
         <display>
         <title>LaTex 数学公式</title>
@@ -20,7 +42,7 @@
          
            
              
-              <breadCrumb title="tools" url="http://godric160.me/categories/tools/"/>
+              <breadCrumb title="tools" url="https://godric160.com/categories/tools/"/>
           
         </display>
     </data>
@@ -28,7 +50,7 @@
 
     
   <url>
-    <loc>http://godric160.me/2018/01/07/Eulers-Number/</loc>
+    <loc>https://godric160.com/2018/01/07/Eulers-Number/</loc>
     <lastmod>2018-01-07T03:38:59.952Z</lastmod>
     <data>
         <display>
@@ -44,7 +66,7 @@
          
            
              
-              <breadCrumb title="math" url="http://godric160.me/categories/math/"/>
+              <breadCrumb title="math" url="https://godric160.com/categories/math/"/>
           
         </display>
     </data>
@@ -52,7 +74,7 @@
 
     
   <url>
-    <loc>http://godric160.me/2018/01/03/Javacross-01/</loc>
+    <loc>https://godric160.com/2018/01/03/Javacross-01/</loc>
     <lastmod>2018-01-03T08:09:10.695Z</lastmod>
     <data>
         <display>
@@ -66,7 +88,7 @@
          
            
              
-              <breadCrumb title="java" url="http://godric160.me/categories/java/"/>
+              <breadCrumb title="java" url="https://godric160.com/categories/java/"/>
           
         </display>
     </data>
@@ -74,7 +96,7 @@
 
     
   <url>
-    <loc>http://godric160.me/2017/12/20/Intro/</loc>
+    <loc>https://godric160.com/2017/12/20/Intro/</loc>
     <lastmod>2018-01-03T07:37:22.553Z</lastmod>
     <data>
         <display>
@@ -88,7 +110,7 @@
          
            
              
-              <breadCrumb title="life" url="http://godric160.me/categories/life/"/>
+              <breadCrumb title="life" url="https://godric160.com/categories/life/"/>
           
         </display>
     </data>
