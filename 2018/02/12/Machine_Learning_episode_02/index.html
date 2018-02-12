@@ -107,7 +107,7 @@
 <meta property="og:image" content="http://p194z0s8t.bkt.clouddn.com/gradient%20descent.png">
 <meta property="og:image" content="http://p194z0s8t.bkt.clouddn.com/gradient%20descent%20parameter%20alpha.png">
 <meta property="og:image" content="http://p194z0s8t.bkt.clouddn.com/gradient%20descent%20minimum.png">
-<meta property="og:updated_time" content="2018-02-12T10:50:45.405Z">
+<meta property="og:updated_time" content="2018-02-12T10:54:49.611Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Machine Learining--Linear Regression">
 <meta name="twitter:description" content="Model RepresentationNotation：    $x_{i}$ denote the “input” variables,also called input features;   $y_{i}$  denote the “output” or target variable that we are trying to predict;   $(x^{(i)},y^{(i)})$">
@@ -448,7 +448,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  935
+                  916
                 </span>
               
 
@@ -490,11 +490,8 @@
 <li>$x_{i}$ denote the “input” variables,also called input features;  </li>
 <li>$y_{i}$  denote the “output” or target variable that we are trying to predict;  </li>
 <li>$(x^{(i)},y^{(i)})$  is called a training example, and the dataset that we’ll be using to learn—a list of m training examples ${(x^{(i)} , y^{(i)} ); i = 1, . . . , m}$ —is called a training set</li>
-<li>$h_{\theta}$ 为以 $\theta$ 为参数的hypothesis function；  </li>
 </ol>
-<p>以一次方程为例</p>
-<script type="math/tex; mode=display">
-h_{\theta}(x_{i})=\theta_{0}+\theta_{1}x_{i}</script><h3 id="Cost-Function"><a href="#Cost-Function" class="headerlink" title="Cost Function"></a>Cost Function</h3><p>We can measure the accuracy of our hypothesis function by using a cost function. This takes an average difference (actually a fancier version of an average) of all the results of the hypothesis with inputs from x’s and the actual output y’s.</p>
+<h3 id="Cost-Function"><a href="#Cost-Function" class="headerlink" title="Cost Function"></a>Cost Function</h3><p>We can measure the accuracy of our hypothesis function by using a cost function. This takes an average difference (actually a fancier version of an average) of all the results of the hypothesis with inputs from x’s and the actual output y’s.</p>
 <script type="math/tex; mode=display">
 J(\theta_{0},\theta_{1})=\frac{1}{2m}\sum\limits_{i=1}^{m}(h_{\theta}(x_{i})-y_{i})^{2}</script><p>This function is otherwise called the “Squared error function”, or “Mean squared error”.The mean is halved $\frac{1}{2}$ as a convenience for the computation of the gradient descent, as the derivative term of the square function will cancel out the $\frac{1}{2}$ term.</p>
 <h3 id="Gradient-Descent"><a href="#Gradient-Descent" class="headerlink" title="Gradient Descent"></a>Gradient Descent</h3><p><img src="http://p194z0s8t.bkt.clouddn.com/gradient%20descent.png" alt="Gradient Descent"></p>
