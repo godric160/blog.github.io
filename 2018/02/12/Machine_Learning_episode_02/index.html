@@ -107,7 +107,7 @@
 <meta property="og:image" content="http://p194z0s8t.bkt.clouddn.com/gradient%20descent.png">
 <meta property="og:image" content="http://p194z0s8t.bkt.clouddn.com/gradient%20descent%20parameter%20alpha.png">
 <meta property="og:image" content="http://p194z0s8t.bkt.clouddn.com/gradient%20descent%20minimum.png">
-<meta property="og:updated_time" content="2018-02-13T07:28:02.723Z">
+<meta property="og:updated_time" content="2018-02-13T07:33:21.550Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Machine Learning--Linear Regression">
 <meta name="twitter:description" content="Model RepresentationNotation：    $x_{i}$ denote the “input” variables,also called input features;   $y_{i}$  denote the “output” or target variable that we are trying to predict;   $(x^{(i)},y^{(i)})$">
@@ -448,7 +448,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  916
+                  882
                 </span>
               
 
@@ -464,7 +464,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  6
+                  5
                 </span>
               
             </div>
@@ -498,8 +498,14 @@ J(\theta_{0},\theta_{1})=\frac{1}{2m}\sum\limits_{i=1}^{m}(h_{\theta}(x_{i})-y_{
 <p>The <u>slope</u> of the tangent is the derivative at that point and it will give us a <u>direction</u> to move towards.<br>The size of each step is determined by the parameter $\alpha$, which is called the <u>learning rate</u>.<br>The image above shows us two different starting points that end up in two different places.</p>
 <p>The gradient descent algorithm is:<br>repeat until convergence:  </p>
 <script type="math/tex; mode=display">
-\theta_{j}:=\theta_{j}-\alpha\frac{\partial}{\partial\theta_{j}}J(\theta_{0},\theta_{1})\qquad \text{(for j=0 and j=1)}</script><p><strong>Simultaneously update:</strong><br>$temp0:=\theta<em>{0}-\alpha\frac{\partial}{\partial\theta</em>{0}}J(\theta<em>{0},\theta</em>{1})$<br>$temp1:=\theta<em>{1}-\alpha\frac{\partial}{\partial\theta</em>{1}}J(\theta<em>{0},\theta</em>{1})$<br>$\theta<em>{0}:=temp0$<br>$\theta</em>{1}:=temp1$</p>
-<p><strong>About parameter alpha</strong><br><img src="http://p194z0s8t.bkt.clouddn.com/gradient%20descent%20parameter%20alpha.png" alt="about parameter alpha"><br>We should adjust our parameter α to ensure that the gradient descent algorithm converges in a reasonable time. Failure to converge or too much time to obtain the minimum value imply that our step size is wrong.</p>
+\theta_{j}:=\theta_{j}-\alpha\frac{\partial}{\partial\theta_{j}}J(\theta_{0},\theta_{1})\qquad \text{(for j=0 and j=1)}</script><p><strong>Simultaneously update:</strong></p>
+<script type="math/tex; mode=display">
+\begin{align*}
+& temp0:=\theta_{0}-\alpha\frac{\partial}{\partial\theta_{0}}J(\theta_{0},\theta_{1}) \newline
+& temp1:=\theta_{1}-\alpha\frac{\partial}{\partial\theta_{1}}J(\theta_{0},\theta_{1}) \newline
+& \theta_{0}:=temp0 \newline
+& \theta_{1}:=temp1 \newline
+\end{align*}</script><p><strong>About parameter alpha</strong><br><img src="http://p194z0s8t.bkt.clouddn.com/gradient%20descent%20parameter%20alpha.png" alt="about parameter alpha"><br>We should adjust our parameter α to ensure that the gradient descent algorithm converges in a reasonable time. Failure to converge or too much time to obtain the minimum value imply that our step size is wrong.</p>
 <p><img src="http://p194z0s8t.bkt.clouddn.com/gradient%20descent%20minimum.png" alt="gradient descent minimum">  </p>
 <h3 id="Gradient-Descent-For-Linear-Regression"><a href="#Gradient-Descent-For-Linear-Regression" class="headerlink" title="Gradient Descent For Linear Regression"></a>Gradient Descent For Linear Regression</h3><p>The following is a derivation of $\frac{\partial}{\partial\theta_{j}}J(\theta)$ for example</p>
 <script type="math/tex; mode=display">
