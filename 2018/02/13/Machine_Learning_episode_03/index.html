@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="cs,ml" />
+  <meta name="keywords" content="Personal notes,machine learning,logistic regression," />
 
 
 
@@ -96,17 +96,23 @@
 
 
 
-<meta name="description" content="看不到现实的本来面目。只能看到想看的、想拥有的现实。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="标签">
-<meta property="og:url" content="https://godric160.com/tags/index.html">
+<meta name="description" content="Logistic Regression Model \text{Want: } 0\leq h_\theta (x) \leq 1Our new form uses the “Sigmoid Function,” also called the “Logistic Function”:  \begin{align*} &amp; h_\theta (x) = g ( \theta^T x ) \newli">
+<meta name="keywords" content="Personal notes,machine learning,logistic regression">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Machine Learning--Logistic Regression">
+<meta property="og:url" content="https://godric160.com/2018/02/13/Machine_Learning_episode_03/index.html">
 <meta property="og:site_name" content="Godric160个人博客">
-<meta property="og:description" content="看不到现实的本来面目。只能看到想看的、想拥有的现实。">
+<meta property="og:description" content="Logistic Regression Model \text{Want: } 0\leq h_\theta (x) \leq 1Our new form uses the “Sigmoid Function,” also called the “Logistic Function”:  \begin{align*} &amp; h_\theta (x) = g ( \theta^T x ) \newli">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-20T11:52:01.881Z">
+<meta property="og:image" content="http://p194z0s8t.bkt.clouddn.com/sigmoid%20function.png">
+<meta property="og:image" content="http://p194z0s8t.bkt.clouddn.com/Logistic_regression_cost_function_positive_class.png">
+<meta property="og:image" content="http://p194z0s8t.bkt.clouddn.com/Logistic_regression_cost_function_negative_class.png">
+<meta property="og:image" content="http://p194z0s8t.bkt.clouddn.com/One-vs-all.png">
+<meta property="og:updated_time" content="2018-02-13T11:56:50.675Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="标签">
-<meta name="twitter:description" content="看不到现实的本来面目。只能看到想看的、想拥有的现实。">
+<meta name="twitter:title" content="Machine Learning--Logistic Regression">
+<meta name="twitter:description" content="Logistic Regression Model \text{Want: } 0\leq h_\theta (x) \leq 1Our new form uses the “Sigmoid Function,” also called the “Logistic Function”:  \begin{align*} &amp; h_\theta (x) = g ( \theta^T x ) \newli">
+<meta name="twitter:image" content="http://p194z0s8t.bkt.clouddn.com/sigmoid%20function.png">
 
 
 
@@ -135,13 +141,13 @@
 
 
 
-  <link rel="canonical" href="https://godric160.com/tags/"/>
+  <link rel="canonical" href="https://godric160.com/2018/02/13/Machine_Learning_episode_03/"/>
 
 
 
 
 
-  <title>标签 | Godric160个人博客</title>
+  <title>Machine Learning--Logistic Regression | Godric160个人博客</title>
   
 
 
@@ -325,40 +331,329 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://godric160.com/2018/02/13/Machine_Learning_episode_03/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Godric160">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Godric160个人博客">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">标签</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                目前共计 14 个标签
+          <h1 class="post-title" itemprop="name headline">Machine Learning--Logistic Regression</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-13T18:50:04+08:00">
+                2018-02-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/machine-learning/" itemprop="url" rel="index">
+                    <span itemprop="name">machine learning</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            <!--noindex-->
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/02/13/Machine_Learning_episode_03/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="2018/02/13/Machine_Learning_episode_03/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+              <!--/noindex-->
+            
+          
+
+          
+          
+             <span id="/2018/02/13/Machine_Learning_episode_03/" class="leancloud_visitors" data-flag-title="Machine Learning--Logistic Regression">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  719
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  4
+                </span>
+              
             </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/Euler-s-Number/" style="font-size: 12px; color: #ccc">Euler's Number</a> <a href="/tags/LaTex/" style="font-size: 12px; color: #ccc">LaTex</a> <a href="/tags/Personal-notes/" style="font-size: 30px; color: #111">Personal notes</a> <a href="/tags/exp/" style="font-size: 12px; color: #ccc">exp</a> <a href="/tags/head-first/" style="font-size: 12px; color: #ccc">head_first</a> <a href="/tags/java-cross/" style="font-size: 12px; color: #ccc">java_cross</a> <a href="/tags/life/" style="font-size: 12px; color: #ccc">life</a> <a href="/tags/linear-regression/" style="font-size: 12px; color: #ccc">linear regression</a> <a href="/tags/logistic-regression/" style="font-size: 12px; color: #ccc">logistic regression</a> <a href="/tags/machine-learning/" style="font-size: 30px; color: #111">machine learning</a> <a href="/tags/markdown/" style="font-size: 12px; color: #ccc">markdown</a> <a href="/tags/mathematical-constant/" style="font-size: 12px; color: #ccc">mathematical constant</a> <a href="/tags/mathematics/" style="font-size: 12px; color: #ccc">mathematics</a> <a href="/tags/selfie/" style="font-size: 12px; color: #ccc">selfie</a>
-            </div>
-          </div>
-        
-      </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h3 id="Logistic-Regression-Model"><a href="#Logistic-Regression-Model" class="headerlink" title="Logistic Regression Model"></a>Logistic Regression Model</h3><script type="math/tex; mode=display">
+\text{Want: } 0\leq h_\theta (x) \leq 1</script><p>Our new form uses the “Sigmoid Function,” also called the “Logistic Function”:</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+& h_\theta (x) = g ( \theta^T x ) \newline \newline
+& z = \theta^T x \newline
+& g(z) = \dfrac{1}{1 + e^{-z}} \newline
+& h_\theta (x)=\dfrac{1}{1 + e^{-\theta^T x}}
+\end{align*}</script><p>The following image shows us what the sigmoid function looks like:<br><img src="http://p194z0s8t.bkt.clouddn.com/sigmoid%20function.png" alt="sigmoid function"></p>
+<p>$h_\theta(x)$ =estimated probability that y=1 on input x .</p>
+<p>For example, $h_\theta(x)=0.7$ gives us a probability of 70% that our output is 1 (e.g. if probability that it is 1 is 70%, then the probability that it is 0 is 30%).</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+& h_\theta(x) = P(y=1 | x ; \theta) = 1 - P(y=0 | x ; \theta) \newline
+& P(y = 0 | x;\theta) + P(y = 1 | x ; \theta) = 1
+\end{align*}</script><h3 id="Decision-Boundary"><a href="#Decision-Boundary" class="headerlink" title="Decision Boundary"></a>Decision Boundary</h3><p>In order to get our discrete 0 or 1 classification, we can translate the output of the hypothesis function as follows:</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+& h_\theta(x) \geq 0.5 \rightarrow y = 1 \newline
+& h_\theta(x) < 0.5 \rightarrow y = 0
+\end{align*}</script><p>The way our logistic function g behaves is that when its input is greater than or equal to zero, its output is greater than or equal to 0.5:</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+& g(z) \geq 0.5 \newline
+& when \; z \geq 0
+\end{align*}</script><p>Remember.</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+z=0, e^{0}=1 \Rightarrow g(z)=1/2\newline
+z \to \infty, e^{-\infty} \to 0 \Rightarrow g(z)=1 \newline
+z \to -\infty, e^{\infty}\to \infty \Rightarrow g(z)=0
+\end{align*}</script><p>So if our input to g is $\theta^T x$ , then that means:</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+& h_\theta(x) = g(\theta^T x) \geq 0.5 \newline
+& when \; \theta^T x \geq 0
+\end{align*}</script><p>From these statements we can now say:</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+& \theta^T x \geq 0 \Rightarrow y = 1 \newline
+& \theta^T x < 0 \Rightarrow y = 0 \newline
+\end{align*}</script><p>The <strong>decision boundary</strong> is the line that separates the area where y = 0 and where y = 1. It is created by our hypothesis function.<br>The input to the sigmoid function g(z) (e.g. $\theta^T X$ ) doesn’t need to be linear, and could be a function that describes a circle (e.g. $z = \theta_0 + \theta_1 x_1^2 +\theta_2 x_2^2$ ) or any shape to fit our data.</p>
+<h3 id="Cost-Function"><a href="#Cost-Function" class="headerlink" title="Cost Function"></a>Cost Function</h3><p>We cannot use the same cost function that we use for linear regression because the Logistic Function will cause the output to be wavy, causing <u>many local optima</u>. In other words, it will not be a convex function.</p>
+<p>Cost function for logistic regression looks like:</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+& J(\theta) = \dfrac{1}{m} \sum_{i=1}^m \mathrm{Cost}(h_\theta(x^{(i)}),y^{(i)}) \newline
+& \mathrm{Cost}(h_\theta(x),y) = -\log(h_\theta(x)) \; & \text{if y = 1} \newline
+& \mathrm{Cost}(h_\theta(x),y) = -\log(1-h_\theta(x)) \; & \text{if y = 0}
+\end{align*}</script><p>When y = 1, we get the following plot for $J(\theta)$ vs $h_\theta (x)$:</p>
+<p><img src="http://p194z0s8t.bkt.clouddn.com/Logistic_regression_cost_function_positive_class.png" alt="Logistic Regression Cost Function Positive Class"></p>
+<p>Similarly, when y = 0, we get the following plot for $J(\theta)$ vs $h_\theta (x)$:</p>
+<p><img src="http://p194z0s8t.bkt.clouddn.com/Logistic_regression_cost_function_negative_class.png" alt="Logistic Regression Cost Function Negative Class"></p>
+<script type="math/tex; mode=display">
+\begin{align*}
+& \mathrm{Cost}(h_\theta(x),y) = 0 \text{ if } h_\theta(x) = y \newline
+& \mathrm{Cost}(h_\theta(x),y) \rightarrow \infty \text{ if } y = 0 \; \mathrm{and} \; h_\theta(x) \rightarrow 1 \newline
+& \mathrm{Cost}(h_\theta(x),y) \rightarrow \infty \text{ if } y = 1 \; \mathrm{and} \; h_\theta(x) \rightarrow 0 \newline
+\end{align*}</script><p>If our correct answer ‘y’ is 0, then the cost function will be 0 if our hypothesis function also outputs 0. If our hypothesis approaches 1, then the cost function will approach infinity.</p>
+<p>If our correct answer ‘y’ is 1, then the cost function will be 0 if our hypothesis function outputs 1. If our hypothesis approaches 0, then the cost function will approach infinity.</p>
+<p>Writing the cost function in this way guarantees that J(θ) is convex for logistic regression.</p>
+<h3 id="Simplified-Cost-Function-and-Gradient-Descent"><a href="#Simplified-Cost-Function-and-Gradient-Descent" class="headerlink" title="Simplified Cost Function and Gradient Descent"></a>Simplified Cost Function and Gradient Descent</h3><h5 id="Simplified-Cost-Function"><a href="#Simplified-Cost-Function" class="headerlink" title="Simplified Cost Function"></a>Simplified Cost Function</h5><p>We can compress our cost function’s two conditional cases into one case:</p>
+<script type="math/tex; mode=display">
+\mathrm{Cost}(h_\theta(x),y) = - y \; \log(h_\theta(x)) - (1 - y) \log(1 - h_\theta(x))</script><p>We can fully write out our entire cost function as follows:</p>
+<script type="math/tex; mode=display">
+J(\theta) = - \frac{1}{m} \displaystyle \sum_{i=1}^m [y^{(i)}\log (h_\theta (x^{(i)})) + (1 - y^{(i)})\log (1 - h_\theta(x^{(i)}))]</script><p>A vectorized implementation is:</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+& h = g(X\theta)\newline
+& J(\theta) = \frac{1}{m} \cdot \left(-y^{T}\log(h)-(1-y)^{T}\log(1-h)\right)
+\end{align*}</script><h5 id="Gradient-Descent"><a href="#Gradient-Descent" class="headerlink" title="Gradient Descent"></a>Gradient Descent</h5><p>The general form of gradient descent is:</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+& Repeat \; \lbrace \newline
+& \; \theta_j := \theta_j - \alpha \dfrac{\partial}{\partial \theta_j}J(\theta) \newline
+& \rbrace
+\end{align*}</script><p>We can work out the derivative part using calculus to get:</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+& Repeat \; \lbrace \newline
+& \; \theta_j := \theta_j - \frac{\alpha}{m} \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)}) x_j^{(i)} \newline
+& \rbrace
+\end{align*}</script><p>A vectorized implementation is:</p>
+<script type="math/tex; mode=display">
+\theta := \theta - \frac{\alpha}{m} X^{T} (g(X \theta ) - \vec{y})</script><h3 id="Advanced-Optimization"><a href="#Advanced-Optimization" class="headerlink" title="Advanced Optimization"></a>Advanced Optimization</h3><p>“Conjugate gradient”, “BFGS”, and “L-BFGS” are more sophisticated, faster ways to optimize θ that can be used instead of gradient descent.We first need to provide a function that evaluates the following two functions for a given input value θ:</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+& J(\theta) \newline
+& \dfrac{\partial}{\partial \theta_j}J(\theta)
+\end{align*}</script><p>We can write a single function that returns both of these:<br><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[jVal, gradient]</span> = <span class="title">costFunction</span><span class="params">(theta)</span></span></span><br><span class="line">  jVal = [...code to compute J(theta)...];</span><br><span class="line">  gradient = [...code to compute derivative of J(theta)...];</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure></p>
+<p>Then we can use octave’s “fminunc()” optimization algorithm along with the “optimset()” function that creates an object containing the options we want to send to “fminunc()”.<br><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">options = optimset(<span class="string">'GradObj'</span>, <span class="string">'on'</span>, <span class="string">'MaxIter'</span>, <span class="number">100</span>);</span><br><span class="line">initialTheta = <span class="built_in">zeros</span>(<span class="number">2</span>,<span class="number">1</span>);</span><br><span class="line">   [optTheta, functionVal, exitFlag] = fminunc(@costFunction, initialTheta, options);</span><br></pre></td></tr></table></figure></p>
+<p>We give to the function “fminunc()” our cost function, our initial vector of theta values, and the “options” object that we created beforehand.</p>
+<h3 id="Multiclass-Classification-One-vs-all"><a href="#Multiclass-Classification-One-vs-all" class="headerlink" title="Multiclass Classification: One-vs-all"></a>Multiclass Classification: One-vs-all</h3><p>Define y = {0,1…n}, we divide our problem into n+1 (+1 because the index starts at 0) binary classification problems; in each one, we predict the probability that ‘y’ is a member of one of our classes.</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+& y \in \lbrace0, 1 ... n\rbrace \newline
+& h_\theta^{(0)}(x) = P(y = 0 | x ; \theta) \newline
+& h_\theta^{(1)}(x) = P(y = 1 | x ; \theta) \newline
+& \cdots \newline
+& h_\theta^{(n)}(x) = P(y = n | x ; \theta) \newline
+& \mathrm{prediction} = \max_i( h_\theta ^{(i)}(x) )\newline
+\end{align*}</script><p>We are basically choosing one class and then lumping all the others into a single second class. We do this repeatedly, applying binary logistic regression to each case, and then use the hypothesis that returned the highest value as our prediction.</p>
+<p>The following image shows how one could classify 3 classes:<br><img src="http://p194z0s8t.bkt.clouddn.com/One-vs-all.png" alt="One-vs-all"></p>
+<p>Train a logistic regression classifier $h_\theta(x)$ for each class￼ to predict the probability that ￼ ￼y = i￼ ￼.</p>
+<p>To make a prediction on a new x, pick the class ￼that maximizes $h_\theta (x)$</p>
+<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><a href="https://www.coursera.org/learn/machine-learning" target="_blank" rel="noopener">Machine Learning by Andrew Ng</a>   </p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Personal-notes/" rel="tag"># Personal notes</a>
+          
+            <a href="/tags/machine-learning/" rel="tag"># machine learning</a>
+          
+            <a href="/tags/logistic-regression/" rel="tag"># logistic regression</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/02/12/Machine_Learning_episode_02/" rel="next" title="Machine Learning--Linear Regression">
+                <i class="fa fa-chevron-left"></i> Machine Learning--Linear Regression
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -581,10 +876,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
@@ -609,7 +904,7 @@
 		_hcwp.push({widget:"Bloggerstream", widget_id: 99389, selector:".hc-comment-count", label: "{\%COUNT%\}" });
 
 		
-		_hcwp.push({widget:"Stream", widget_id: 99389, xid: "tags/index.html"});
+		_hcwp.push({widget:"Stream", widget_id: 99389, xid: "2018/02/13/Machine_Learning_episode_03/"});
 		
 
 		(function() {
